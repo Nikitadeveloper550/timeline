@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 1px  solid red;
+}
+
+.section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    font-family: "Poppins";
+    max-width: 100%;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    background-color: rgba(246, 227, 0);
+}
+
+.outer-box {
+    padding: 10px 15px;
+    background-color: inherit;
+    width: 50%;
+    position: relative;
+}
+
+.content {
+    background-color: #fff;
+    max-width: 568px;
+    padding: 23px 27px;
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.head {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+.ol-list {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 20px;
+    bottom: 180px;
+    left: 50%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.left{
+    position: relative;
+    left: 0;
+}
+
+.right
+{
+    position: relative;
+    left: 50%;
+}
+.outer-box::after {
+    content: '';
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    top: 15px;
+    position: absolute;
+    right: -16px;
+    top: 0;
+}
+
+.right::after {
+    left: -17px;
+}
+
+.left-top {
+    position: absolute;
+    left: 250px;
+    top: -30px;
+}
+
+.left-left {
+    position: absolute;
+    bottom: 55%;
+    left: 5%;
+}
+
+.right-left {
+    position: absolute;
+    right: 20%;
+    bottom: 80%;
+}
+
+.right-bottom {
+    position: absolute;
+    right: -15%;
+    bottom: 10%;
+}
+
+.left-bottom-top {
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+}
+
+.left-bottom-right {
+    position: absolute;
+    top: 80%;
+    left: -15%;
+}
+
+.right-top {
+    position: absolute;
+    bottom: 90%;
+    left: 100%
+}
+
+.right-bottom-left {
+    position: absolute;
+    right: 20%;
+    top: 80%;
+}
+
+
+@media (max-width:767.98px) {
+    .timeline::after {
+        left: 5%;
+    }
+
+    .right {
+        left: 10%;
+    }
+
+    .left {
+        left: 10%;
+    }
+
+    .timeline::after {
+        bottom: 250px;
+    }
+
+    .left::after {
+        left: -30px;
+    }
+
+    .right::after {
+        left: -29px;
+    }
+
+    .outer-box{
+        width: 90%;
+    }
+
+    .left-top,
+    .left-left,
+    .right-left,
+    .right-bottom,
+    .left-bottom-top,
+    .left-bottom-right,
+    .right-bottom-left,
+    .right-top {
+        opacity: 0;
+    }
+
+    .right-top {
+        position: absolute;
+        left: 0%;
+    }
+
+    .left-top {
+        position: absolute;
+        left: 0%;
+    }
+
+    .right-bottom{
+        position: absolute;
+        left: 0%;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .timeline::after {
+        bottom: 200px;
+    }
+
+    .right-top {
+        position: absolute;
+        left: -50%;
+    }
+
+    .right-bottom{
+        position: absolute;
+        left: 0%;
+    }
+
+    .left-top {
+        position: absolute;
+        left: 0%;
+    }
+
+}
